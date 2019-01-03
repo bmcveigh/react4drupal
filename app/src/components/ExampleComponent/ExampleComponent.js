@@ -1,4 +1,6 @@
-class ReactJsLabel extends React.Component {
+import React, {Component} from 'react';
+
+class ExampleComponent extends Component {
 
   state = {
     isOpen: false
@@ -31,18 +33,4 @@ class ReactJsLabel extends React.Component {
 
 }
 
-// Create a new component that displays the content of the node.
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <ReactJsLabel />
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('react-app')
-);
+export default ExampleComponent;
