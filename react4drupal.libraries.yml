@@ -7,7 +7,6 @@ react:
     https://unpkg.com/babel-standalone@6.15.0/babel.min.js: { external: true, minified: true }
 react-app:
   version: 1.0.0
-  footer: true
   js:
     app/build/main.js: {}
   css:
