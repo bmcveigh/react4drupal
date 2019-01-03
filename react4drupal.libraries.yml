@@ -9,4 +9,6 @@ react-app:
   version: 1.0.0
   footer: true
   js:
-    js/index.js: { preprocess: 0, attributes: { type: text/babel } }
+    app/build/main.js: {}
+  css:
+    app/build/main.css: {}
