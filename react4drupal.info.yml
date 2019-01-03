@@ -1,0 +1,5 @@
+name: 'React for Drupal'
+type: module
+description: 'Load the React JavaScript library.'
+core: 8.x
+package: 'React'
