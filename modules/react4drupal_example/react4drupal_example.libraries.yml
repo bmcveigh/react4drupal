@@ -1,6 +1,0 @@
-react-app:
-  version: 1.0.0
-  js:
-    app/build/main.js: {}
-  css:
-    app/build/main.css: {}
