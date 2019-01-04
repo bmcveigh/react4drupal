@@ -1,0 +1,5 @@
+name = 'React for Drupal'
+type = module
+description = 'Add ReactJS to Drupal node pages in a progressively decoupled manner.'
+core = 7.x
+package = 'React for Drupal'

@@ -1,0 +1,7 @@
+name = 'React for Drupal Example'
+type = module
+description = 'Example implementation of React using the React for Drupal module.'
+core = 7.x
+package = 'React for Drupal'
+
+dependencies[] = react4drupal

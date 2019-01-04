@@ -12,6 +12,7 @@ function react4drupal_theme($existing, $type, $theme, $path) {
   return [
     'react4drupal' => [
       'variables' => [],
+      'template' => 'templates/react4drupal',
     ],
   ];
 }
