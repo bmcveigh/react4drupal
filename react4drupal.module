@@ -16,3 +16,28 @@ function react4drupal_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
+
+/**
+ * Implements hook_library().
+ */
+function react4drupal_library() {
+  // Add the ReactJS library.
+  $libraries['react'] = array(
+    'title' => 'ReactJS',
+    'version' => '1.x',
+    'js' => array(
+      'https://unpkg.com/react@16/umd/react.production.min.js' => array(),
+      'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js' => array(),
+      'https://unpkg.com/babel-standalone@6.15.0/babel.min.js' => array(),
+    ),
+  );
+
+  return $libraries;
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function template_preprocess_drupal4react(&$variables) {
+  $variables['libraries']['#attached']['library'][] = ['drupal4react', 'react'];
+}
