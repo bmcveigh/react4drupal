@@ -18,7 +18,7 @@ function react4drupal_example_library() {
     'title' => 'React App',
     'version' => '1.0.0',
     'js' => array(
-      $path . '/app/build/main.js' => array(),
+      $path . '/app/build/main.js' => array('scope' => 'footer'),
     ),
     'css' => array(
       $path . '/app/build/main.css' => array(
