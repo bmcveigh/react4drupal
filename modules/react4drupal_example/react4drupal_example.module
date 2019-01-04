@@ -5,11 +5,37 @@
  * Contains react4drupal_example.module.
  */
 
+require_once 'includes/react4drupal_example.block.inc';
+
+/**
+ * Implements hook_library().
+ */
+function react4drupal_example_library() {
+  $path = drupal_get_path('module', 'react4drupal_example');
+
+  // Add the ReactJS library.
+  $libraries['react-app'] = array(
+    'title' => 'React App',
+    'version' => '1.0.0',
+    'js' => array(
+      $path . '/app/build/main.js' => array(),
+    ),
+    'css' => array(
+      $path . '/app/build/main.css' => array(
+        'type' => 'file',
+        'media' => 'screen',
+      ),
+    ),
+  );
+
+  return $libraries;
+}
+
 /**
  * Implements hook_preprocess_HOOK().
  *
  * Add the react-app library to this module.
  */
 function react4drupal_example_preprocess_react4drupal(&$variables) {
-  $variables['libraries']['#attached']['library'][] = 'react4drupal_example/react-app';
+  $variables['libraries']['#attached']['library'][] = ['react4drupal_example', 'react-app'];
 }
