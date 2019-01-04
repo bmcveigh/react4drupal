@@ -2,4 +2,4 @@ name: 'React for Drupal'
 type: module
 description: 'Add ReactJS to Drupal node pages in a progressively decoupled manner.'
 core: 8.x
-package: 'React'
+package: 'React for Drupal'

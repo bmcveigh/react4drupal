@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Contains react4drupal_example.module.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Add the react-app library to this module.
+ */
+function react4drupal_example_preprocess_react4drupal(&$variables) {
+  $variables['libraries']['#attached']['library'][] = 'react4drupal_example/react-app';
+}
