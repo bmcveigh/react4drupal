@@ -24,6 +24,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-run": "^1.7.1",
+    "gulp-watch": "^5.0.1",
     "react-app-rewired": "^1.6.2"
   }
 }
